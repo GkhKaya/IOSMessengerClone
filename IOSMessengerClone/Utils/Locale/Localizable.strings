@@ -18,3 +18,13 @@
 "alreadyHaveAnAccount" = "Already have an account?";
 "signUp" = "Sign Up";
 "signIn" = "Sign In";
+
+//Inbox
+"chats" = "Chats;";
+
+//New Mesages
+
+"contacts" = "CONTACTS";
+"to" = "To: ";
+"newMessage" = "New Message";
+"cancel" = "Cancel";

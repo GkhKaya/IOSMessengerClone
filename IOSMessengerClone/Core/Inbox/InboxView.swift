@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InboxView: View {
+    @State private var showNewMessageView = false
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
@@ -20,18 +21,22 @@ struct InboxView: View {
                         }
                     }.listStyle(PlainListStyle())
                         .frame(height: UIScreen.main.bounds.height-120)
-                }.toolbar {
+                }
+                .fullScreenCover(isPresented: $showNewMessageView, content: {
+                    NewMessageView()
+                })
+                .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         HStack {
                             Image(systemName: "person.circle.fill")
 
-                            Text("Chats")
+                            Text(LocalKeys.Inbox.chats.rawValue.locale())
                                 .font(.title).fontWeight(.semibold)
                         }
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button{
-                            print("Show message vieb")
+                            showNewMessageView.toggle()
                         }label: {
                             Image(systemName: "square.and.pencil.circle.fill")
                                 .resizable()

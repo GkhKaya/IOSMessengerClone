@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LocalKeys{
-    enum Auth : String{
+struct LocalKeys {
+    enum Auth: String {
         case enterYourEmail = "enterYourEmail"
         case enterYourPassword = "enterYourPassword"
         case enterYourFullname = "enterYourFullname"
@@ -20,18 +20,28 @@ struct LocalKeys{
         case signUp = "signUp"
         case login = "login"
         case signIn = "signIn"
-        
+    }
+
+    enum Inbox: String {
+        case chats = "chats"
+    }
+
+    enum NewMessage: String {
+        case contacts = "contacts"
+        case to = "to"
+        case newMessage = "newMessage"
+        case cancel = "cancel"
     }
 }
 
 
 
 
-extension String{
+extension String {
     /// It localize any string from Localizable string
     /// - Returns: localized value
 
-    func locale() -> LocalizedStringKey{
+    func locale() -> LocalizedStringKey {
         return LocalizedStringKey(self)
     }
 }
