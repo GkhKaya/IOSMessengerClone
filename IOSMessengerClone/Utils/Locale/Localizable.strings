@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  IOSMessengerClone
+
+  Created by Gokhan Kaya on 13.08.2023.
+  
+*/
+
+//Auth
+"enterYourEmail" = "Enter Your Email";
+"enterYourPassword" = "Enter Your Password";
+"enterYourFullname" = "Enter Your Fullname";
+"forgotPassword" = "Forgot Password?";
+"login" = "Login";
+"or" = "OR";
+"continueWithFacebook" = "Continue With Facebook";
+"dontHaveAnAccount" = "Don't have an account?";
+"alreadyHaveAnAccount" = "Already have an account?";
+"signUp" = "Sign Up";
+"signIn" = "Sign In";

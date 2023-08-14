@@ -11,7 +11,7 @@ import SwiftUI
 struct IOSMessengerCloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
